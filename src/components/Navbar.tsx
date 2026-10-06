@@ -32,12 +32,12 @@ export function Navbar() {
         scrolled ? 'shadow-[0_1px_0_0_rgba(26,11,14,0.08)]' : ''
       }`}
     >
-      <div className="mx-auto flex h-18 max-w-6xl items-center justify-between px-5">
+      <div className="mx-auto flex h-22 max-w-6xl items-center justify-between px-5">
         <Link to="/" className="flex items-center gap-2" aria-label="Restaurante Mercosur — inicio">
           <img
             src="/img/logo-header.webp"
             alt="Restaurante Mercosur"
-            className="h-9 w-auto"
+            className="h-14 w-auto"
           />
         </Link>
 

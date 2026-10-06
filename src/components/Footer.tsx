@@ -10,7 +10,7 @@ export function Footer() {
           <img
             src="/img/logo-cream.webp"
             alt="Restaurante Mercosur"
-            className="h-11 w-auto"
+            className="h-14 w-auto"
           />
           <p className="mt-4 max-w-xs text-sm leading-relaxed text-cream/70">
             Restaurant · Pizzería · Parrillada. Un capítulo vivo en la historia y el corazón de
