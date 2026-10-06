@@ -5,6 +5,36 @@ from pathlib import Path
 IMG_DIR = Path("public/img")
 LOGO_SOURCE = Path("../../34 años mercosur.png")
 
+
+def aplicar_transparencia_fondo_blanco(img, max_dist=25, gamma=1.5):
+    """
+    El logo de 34 años fue exportado con fondo blanco sólido en vez de transparente.
+    Esta función convierte el blanco exterior en transparencia real, usando una
+    transición suave para evitar bordes pixelados al ponerlo sobre fondos oscuros.
+    Preserva el fondo burdeos del logo y la jarra de cerveza.
+    """
+    import numpy as np
+    arr = np.array(img.convert('RGBA')).astype(float)
+    rgb = arr[:, :, :3]
+    alpha = arr[:, :, 3]
+
+    # Distancia euclídea al blanco puro
+    white_dist = np.sqrt(np.sum((rgb - 255) ** 2, axis=2))
+
+    # Alpha: 0 en blanco puro, 255 lejos del blanco, transición suave en el halo
+    new_alpha = 255 * np.clip(white_dist / max_dist, 0, 1) ** gamma
+    # Respetar el alpha original (por si el PNG ya tuviera transparencia real)
+    new_alpha = new_alpha * (alpha / 255.0)
+    arr[:, :, 3] = new_alpha
+
+    result = Image.fromarray(arr.astype(np.uint8))
+    # Recortar al bounding box del contenido visible para eliminar exceso transparente
+    bbox = result.split()[3].getbbox()
+    if bbox:
+        result = result.crop(bbox)
+    return result
+
+
 # Crear versión comprimida del logo (para header y footer)
 def procesar_logo():
     if not LOGO_SOURCE.exists():
@@ -12,31 +42,25 @@ def procesar_logo():
         return
 
     img = Image.open(LOGO_SOURCE)
-    if img.mode != 'RGBA':
-        img = img.convert('RGBA')
+    # Aplicar transparencia real al fondo blanco del logo
+    img = aplicar_transparencia_fondo_blanco(img)
 
-    # Redimensionar para web (máximo 800px de ancho para header, 500px para footer)
-    ancho_header = 800
-    ratio = ancho_header / img.width
-    alto_header = int(img.height * ratio)
-    header = img.resize((ancho_header, alto_header), Image.LANCZOS)
+    def guardar_logo(src, ancho, path, calidad=90):
+        ratio = ancho / src.width
+        alto = int(src.height * ratio)
+        resized = src.resize((ancho, alto), Image.LANCZOS)
+        # Forzar RGBA para que WebP guarde el canal alfa
+        if resized.mode != 'RGBA':
+            resized = resized.convert('RGBA')
+        resized.save(IMG_DIR / path, "WEBP", quality=calidad, method=6)
+        print(f"  -> {path}: modo={Image.open(IMG_DIR / path).mode}, size={resized.size}")
 
-    ancho_footer = 500
-    ratio = ancho_footer / img.width
-    alto_footer = int(img.height * ratio)
-    footer = img.resize((ancho_footer, alto_footer), Image.LANCZOS)
+    IMG_DIR.mkdir(parents=True, exist_ok=True)
+    guardar_logo(img, 800, "logo-header.webp")
+    guardar_logo(img, 500, "logo-cream.webp")
+    guardar_logo(img, 600, "logo.webp")
 
-    header.save(IMG_DIR / "logo-header.webp", "WEBP", quality=90, method=6)
-    footer.save(IMG_DIR / "logo-cream.webp", "WEBP", quality=90, method=6)
-
-    # También una versión grande para Home si se necesita
-    ancho_general = 600
-    ratio = ancho_general / img.width
-    alto_general = int(img.height * ratio)
-    general = img.resize((ancho_general, alto_general), Image.LANCZOS)
-    general.save(IMG_DIR / "logo.webp", "WEBP", quality=90, method=6)
-
-    print(f"Logo procesado: {LOGO_SOURCE} -> logo-header.webp, logo-cream.webp, logo.webp")
+    print(f"Logo procesado: {LOGO_SOURCE}")
 
 
 def convertir_imagenes():
