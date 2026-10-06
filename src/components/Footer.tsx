@@ -8,7 +8,7 @@ export function Footer() {
       <div className="mx-auto grid max-w-6xl gap-10 px-5 py-14 text-center md:grid-cols-3 md:text-left">
         <div className="flex flex-col items-center md:items-start">
           <img
-            src="/img/logo-cream.png"
+            src="/img/logo-cream.webp"
             alt="Restaurante Mercosur"
             className="h-11 w-auto"
           />

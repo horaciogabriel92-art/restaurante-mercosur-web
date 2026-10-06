@@ -28,7 +28,7 @@ export const MENU: Category[] = [
   {
     id: 'chivitos',
     name: 'Chivitos',
-    dishImage: '/img/dish-chivito.jpg',
+    dishImage: '/img/dish-chivito.webp',
     items: [
       { name: 'Común', price: '$599' },
       { name: 'Canadiense', price: '$795' },
@@ -40,7 +40,7 @@ export const MENU: Category[] = [
   {
     id: 'minutas',
     name: 'Minutas',
-    image: '/img/cat-minutas.png',
+    image: '/img/cat-minutas.webp',
     items: [
       { name: 'Tortilla de papas', price: '$649' },
       { name: 'Pancho', price: '$199' },
@@ -84,8 +84,8 @@ export const MENU: Category[] = [
     id: 'parrilla',
     name: 'Parrilla',
     note: 'Los mejores cortes, al fuego de siempre.',
-    image: '/img/cat-parrilla.png',
-    dishImage: '/img/dish-parrilla.png',
+    image: '/img/cat-parrilla.webp',
+    dishImage: '/img/dish-parrilla.webp',
     items: [
       { name: 'Provoleta Mercosur', price: '$695' },
       { name: 'Asado de tira (400 gr)', price: '$849' },
@@ -102,7 +102,7 @@ export const MENU: Category[] = [
   {
     id: 'guarniciones',
     name: 'Guarniciones',
-    image: '/img/cat-guarniciones.png',
+    image: '/img/cat-guarniciones.webp',
     items: [
       { name: 'Fritas', price: '$395' },
       { name: 'Fritas c/ cheddar & panceta', price: '$549' },
@@ -129,8 +129,8 @@ export const MENU: Category[] = [
   {
     id: 'pastas',
     name: 'Pastas',
-    image: '/img/cat-pasta.png',
-    dishImage: '/img/dish-pastas.jpg',
+    image: '/img/cat-pasta.webp',
+    dishImage: '/img/dish-pastas.webp',
     items: [
       { name: 'Spaguetti', price: '$449' },
       { name: 'Ravioles de Verdura', price: '$549' },
@@ -153,8 +153,8 @@ export const MENU: Category[] = [
   {
     id: 'pizzas',
     name: 'Pizzas',
-    image: '/img/cat-pizzas.png',
-    dishImage: '/img/dish-pizza.jpg',
+    image: '/img/cat-pizzas.webp',
+    dishImage: '/img/dish-pizza.webp',
     items: [
       { name: 'Faina', price: '$249' },
       { name: 'Común', price2: [{ label: 'Individual', value: '$289' }, { label: 'Grande', value: '$495' }] },
@@ -174,7 +174,7 @@ export const MENU: Category[] = [
   {
     id: 'menu-infantil',
     name: 'Menú Infantil',
-    image: '/img/cat-infantil.png',
+    image: '/img/cat-infantil.webp',
     items: [
       { name: 'Casita de carqueja', price: '$649', tag: 'infantil' },
       { name: 'Nuggets', price: '$495', tag: 'infantil' },
@@ -213,8 +213,8 @@ export const MENU: Category[] = [
   {
     id: 'postres',
     name: 'Postres',
-    image: '/img/cat-postres.png',
-    dishImage: '/img/dish-postres.jpg',
+    image: '/img/cat-postres.webp',
+    dishImage: '/img/dish-postres.webp',
     items: [
       { name: 'Isla flotante', price: '$349' },
       { name: 'Flan con dulce o crema', price: '$289' },
@@ -229,7 +229,7 @@ export const MENU: Category[] = [
   {
     id: 'bebidas',
     name: 'Bebidas',
-    image: '/img/cat-bebidas.png',
+    image: '/img/cat-bebidas.webp',
     items: [
       { name: 'Agua 600 cc', price: '$145' },
       { name: 'Aguas saborizadas', price: '$155' },
@@ -274,8 +274,8 @@ export const MENU: Category[] = [
   {
     id: 'cafeteria',
     name: 'Cafetería',
-    image: '/img/cat-cafeteria.png',
-    dishImage: '/img/dish-cafeteria.jpg',
+    image: '/img/cat-cafeteria.webp',
+    dishImage: '/img/dish-cafeteria.webp',
     items: [
       { name: 'Té o café / Cortado / Café leche', price: '$145 / $165' },
       { name: 'Capuccino / Submarino', price: '$189 / $249' },
@@ -290,8 +290,8 @@ export const MENU: Category[] = [
   {
     id: 'cafeteria-especialidad',
     name: 'Cafetería de Especialidad',
-    image: '/img/cat-cafespec.png',
-    dishImage: '/img/dish-especialidad.jpg',
+    image: '/img/cat-cafespec.webp',
+    dishImage: '/img/dish-especialidad.webp',
     items: [
       { name: 'Capuccino Colonial', price: '$349' },
       { name: 'Submarino Sacramento', price: '$349' },

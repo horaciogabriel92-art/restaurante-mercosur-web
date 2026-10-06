@@ -35,7 +35,7 @@ export function Navbar() {
       <div className="mx-auto flex h-18 max-w-6xl items-center justify-between px-5">
         <Link to="/" className="flex items-center gap-2" aria-label="Restaurante Mercosur — inicio">
           <img
-            src="/img/logo-header.png"
+            src="/img/logo-header.webp"
             alt="Restaurante Mercosur"
             className="h-9 w-auto"
           />

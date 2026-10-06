@@ -3,10 +3,10 @@ import { ArrowRight, MapPin, Clock, MessageCircle, Flame, Pizza, Croissant, IceC
 import { WHATSAPP_URL, MAPS_URL } from '@/data/menu';
 
 const destacados = [
-  { id: 'parrilla', name: 'Parrilla', img: '/img/cat-parrilla.png', dish: '/img/dish-parrilla.png' },
-  { id: 'minutas', name: 'Chivitos & Minutas', img: '/img/cat-minutas.png', dish: '/img/dish-chivito.jpg' },
-  { id: 'pizzas', name: 'Pizzas', img: '/img/cat-pizzas.png', dish: '/img/dish-pizza.jpg' },
-  { id: 'postres', name: 'Postres', img: '/img/cat-postres.png', dish: '/img/dish-postres.jpg' },
+  { id: 'parrilla', name: 'Parrilla', img: '/img/cat-parrilla.webp', dish: '/img/dish-parrilla.webp' },
+  { id: 'minutas', name: 'Chivitos & Minutas', img: '/img/cat-minutas.webp', dish: '/img/dish-chivito.webp' },
+  { id: 'pizzas', name: 'Pizzas', img: '/img/cat-pizzas.webp', dish: '/img/dish-pizza.webp' },
+  { id: 'postres', name: 'Postres', img: '/img/cat-postres.webp', dish: '/img/dish-postres.webp' },
 ];
 
 const momentos = [
@@ -22,7 +22,7 @@ export function Home() {
       {/* HERO */}
       <section className="relative flex min-h-[92vh] items-center justify-center overflow-hidden bg-ink">
         <img
-          src="/img/dish-parrilla.png"
+          src="/img/dish-parrilla.webp"
           alt="Parrilla en Restaurante Mercosur"
           className="absolute inset-0 h-full w-full object-cover opacity-55"
         />
@@ -92,7 +92,7 @@ export function Home() {
         </div>
         <div>
           <img
-            src="/img/dish-chivito.jpg"
+            src="/img/dish-chivito.webp"
             alt="Chivito Mercosur"
             className="aspect-[4/3] w-full rounded-3xl object-cover shadow-lg"
           />
@@ -161,9 +161,9 @@ export function Home() {
           ))}
         </div>
         <div className="mt-14 grid gap-4 sm:grid-cols-3">
-          <img src="/img/dish-pizza.jpg" alt="Pizzas" className="aspect-[4/3] w-full rounded-2xl object-cover" loading="lazy" />
-          <img src="/img/dish-pastas.jpg" alt="Pastas" className="aspect-[4/3] w-full rounded-2xl object-cover" loading="lazy" />
-          <img src="/img/dish-especialidad.jpg" alt="Cafetería de especialidad" className="aspect-[4/3] w-full rounded-2xl object-cover" loading="lazy" />
+          <img src="/img/dish-pizza.webp" alt="Pizzas" className="aspect-[4/3] w-full rounded-2xl object-cover" loading="lazy" />
+          <img src="/img/dish-pastas.webp" alt="Pastas" className="aspect-[4/3] w-full rounded-2xl object-cover" loading="lazy" />
+          <img src="/img/dish-especialidad.webp" alt="Cafetería de especialidad" className="aspect-[4/3] w-full rounded-2xl object-cover" loading="lazy" />
         </div>
       </section>
 
@@ -172,7 +172,7 @@ export function Home() {
         {/* Imagen de parrilla fundida con el fondo */}
         <div
           className="pointer-events-none absolute inset-0 bg-cover bg-center"
-          style={{ backgroundImage: 'url(/img/dish-parrilla.png)' }}
+          style={{ backgroundImage: 'url(/img/dish-parrilla.webp)' }}
           aria-hidden
         />
         <div
@@ -207,7 +207,7 @@ export function Home() {
       {/* MERCOSUR VIAJA */}
       <section id="mercosur-viaja" className="mx-auto grid max-w-6xl scroll-mt-24 items-center gap-12 px-5 py-24 md:grid-cols-2">
         <img
-          src="/img/dish-parrilla.png"
+          src="/img/dish-parrilla.webp"
           alt="Mercosur Viaja — para llevar"
           className="aspect-[4/3] w-full rounded-2xl object-cover"
           loading="lazy"
