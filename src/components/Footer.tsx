@@ -28,7 +28,7 @@ export function Footer() {
             </li>
             <li>
               <a href={MAPS_URL} target="_blank" rel="noreferrer" className="inline-flex items-center gap-2 transition-colors hover:text-gold">
-                <MapPin size={15} /> Av. General Flores 252, Colonia
+                <MapPin size={15} /> Gral. Flores 252, 70000 Colonia del Sacramento
               </a>
             </li>
             <li className="flex items-center gap-2">

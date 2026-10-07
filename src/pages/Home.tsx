@@ -37,8 +37,9 @@ export function Home() {
             de <span className="text-gold">Colonia</span>
           </h1>
           <p className="mx-auto mt-6 max-w-xl text-base leading-relaxed text-cream/80 sm:text-lg">
-            Parrilla, pizzería y cafetería en el corazón de Colonia del Sacramento. Tradición,
-            calidad y los buenos momentos, desde 1991.
+            Parrilla, pizzería y cafetería en el corazón de Colonia del Sacramento. Si buscás
+            dónde comer en Colonia del Sacramento, en Mercosur encontrás comida típica uruguaya,
+            chivito, parrilla y los buenos momentos, desde 1991.
           </p>
           <div className="mt-9 flex flex-col items-center justify-center gap-3 sm:flex-row">
             <Link
@@ -76,12 +77,15 @@ export function Home() {
           <p className="mt-6 leading-relaxed text-ink/75">
             Un lugar donde los sabores tradicionales y la hospitalidad se encuentran en cada
             rincón. Un espacio acogedor y lleno de historia, en la mejor esquina de Colonia del
-            Sacramento.
+            Sacramento. Somos una referencia para quienes buscan comida típica uruguaya: chivito,
+            parrillada, pastas caseras y pizzas artesanales.
           </p>
           <p className="mt-4 leading-relaxed text-ink/75">
             Nuestra parrilla es la protagonista, con cortes de carne seleccionados para paladares
             exigentes. Pero hay más: desde nuestras exquisitas entradas hasta los postres
-            caseros, cada opción es un homenaje a la cocina local.
+            caseros, cada opción es un homenaje a la cocina local. El chivito del Restaurante
+            Mercosur en Colonia del Sacramento es uno de los platos más pedidos por locales y
+            turistas.
           </p>
           <Link
             to="/lacarta"
@@ -246,8 +250,9 @@ export function Home() {
               className="rounded-2xl bg-cream p-6 transition-shadow hover:shadow-md"
             >
               <MapPin size={24} className="mx-auto text-wine" strokeWidth={1.8} />
-              <p className="mt-3 text-sm font-semibold text-ink">Av. General Flores 252</p>
-              <p className="text-xs text-ink/60">Colonia del Sacramento</p>
+              <p className="mt-3 text-sm font-semibold text-ink">Gral. Flores 252</p>
+              <p className="text-xs text-ink/60">70000 Colonia del Sacramento</p>
+              <p className="text-xs text-ink/60">Departamento de Colonia, Uruguay</p>
             </a>
             <div className="rounded-2xl bg-cream p-6">
               <Clock size={24} className="mx-auto text-wine" strokeWidth={1.8} />
@@ -264,6 +269,34 @@ export function Home() {
               <p className="mt-3 text-sm font-semibold text-ink">+598 91 387 172</p>
               <p className="text-xs text-ink/60">Pedidos y consultas</p>
             </a>
+          </div>
+        </div>
+      </section>
+
+      {/* SEO / Información para IA search */}
+      <section className="mx-auto max-w-6xl px-5 py-16">
+        <div className="rounded-3xl bg-parchment p-8 md:p-12">
+          <h2 className="font-display text-3xl font-semibold text-ink sm:text-4xl">
+            Restaurante Mercosur en Colonia del Sacramento
+          </h2>
+          <div className="mt-6 space-y-4 leading-relaxed text-ink/80">
+            <p>
+              Ubicados en <strong>Gral. Flores 252, 70000 Colonia del Sacramento, Departamento de Colonia</strong>,
+              somos el punto de encuentro ideal para quienes se preguntan{' '}
+              <em>dónde comer en Colonia del Sacramento</em>. Desde 1991 servimos{' '}
+              <strong>comida típica uruguaya</strong> con la calidez de un restaurante de familia
+              y la experiencia de 34 años.
+            </p>
+            <p>
+              Nuestra propuesta une lo mejor de la <strong>parrilla uruguaya</strong>, pizzas
+              artesanales, pastas caseras y el clásico <strong>chivito</strong>. Contamos con
+              opciones para celíacos, vegetarianos, veganos, menú infantil y un servicio de
+              take-away llamado Mercosur Viaja.
+            </p>
+            <p>
+              Abrimos todos los días a partir de las 11:00. Reservas, pedidos y consultas por
+              WhatsApp al <strong>+598 91 387 172</strong>.
+            </p>
           </div>
         </div>
       </section>

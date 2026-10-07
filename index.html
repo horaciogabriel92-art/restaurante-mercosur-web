@@ -3,15 +3,107 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Restaurante Mercosur — Parrilla, pizzería y cafetería en la mejor esquina de Colonia del Sacramento. 34 años de gastronomía coloniense." />
-    <link rel="icon" type="image/png" href="/img/logo.png" />
+
+    <!-- SEO core -->
+    <title>Restaurante Mercosur — Dónde comer en Colonia del Sacramento | Parrilla · Pizzería · Chivito</title>
+    <meta
+      name="description"
+      content="¿Buscás dónde comer en Colonia del Sacramento? Restaurante Mercosur: comida típica uruguaya, chivito, parrilla y pizzería. 34 años en Gral. Flores 252, Colonia."
+    />
+    <meta
+      name="keywords"
+      content="donde comer en colonia del sacramento, comida tipica uruguaya, chivito restaurante mercosur colonia del sacramento, restaurante colonia del sacramento, parrilla colonia del sacramento, pizzeria colonia del sacramento, chivito colonia, restaurante mercosur, mercosur colonia"
+    />
+    <link rel="canonical" href="https://web-mercosur.vercel.app/" />
+
+    <!-- Hreflang para español, portugués e inglés -->
+    <link rel="alternate" hreflang="es" href="https://web-mercosur.vercel.app/" />
+    <link rel="alternate" hreflang="pt" href="https://web-mercosur.vercel.app/" />
+    <link rel="alternate" hreflang="en" href="https://web-mercosur.vercel.app/" />
+    <link rel="alternate" hreflang="x-default" href="https://web-mercosur.vercel.app/" />
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="restaurant" />
+    <meta property="og:locale" content="es_UY" />
+    <meta property="og:title" content="Restaurante Mercosur — Dónde comer en Colonia del Sacramento" />
+    <meta
+      property="og:description"
+      content="Comida típica uruguaya, chivito, parrilla y pizzería en Colonia del Sacramento. 34 años de historia en Gral. Flores 252."
+    />
+    <meta property="og:url" content="https://web-mercosur.vercel.app/" />
+    <meta property="og:site_name" content="Restaurante Mercosur" />
+    <meta property="og:image" content="https://web-mercosur.vercel.app/img/dish-parrilla.webp" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:image:alt" content="Parrilla del Restaurante Mercosur en Colonia del Sacramento" />
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Restaurante Mercosur — Dónde comer en Colonia del Sacramento" />
+    <meta
+      name="twitter:description"
+      content="Comida típica uruguaya, chivito, parrilla y pizzería en Colonia del Sacramento. 34 años en Gral. Flores 252."
+    />
+    <meta name="twitter:image" content="https://web-mercosur.vercel.app/img/dish-parrilla.webp" />
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/webp" href="/img/logo-header.webp" />
+    <link rel="apple-touch-icon" href="/img/logo-header.webp" />
+
+    <!-- Preconnect fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600;9..144,700&family=Inter:wght@400;500;600;700&display=swap"
       rel="stylesheet"
     />
-    <title>Restaurante Mercosur — Parrilla · Pizzería · Cafetería | Colonia del Sacramento</title>
+
+    <!-- Schema.org: Restaurant (JSON-LD) -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Restaurant",
+        "name": "Restaurante Mercosur",
+        "alternateName": "Mercosur Colonia del Sacramento",
+        "description": "Restaurante de comida típica uruguaya en Colonia del Sacramento. Parrilla, pizzería, chivitos y cafetería. 34 años de historia.",
+        "url": "https://web-mercosur.vercel.app/",
+        "telephone": "+598-91-387-172",
+        "email": "Contacto@restaurantemercosur.com.uy",
+        "priceRange": "$",
+        "servesCuisine": ["Uruguaya", "Parrilla", "Pizzería", "Chivitos", "Cafetería"],
+        "image": [
+          "https://web-mercosur.vercel.app/img/dish-parrilla.webp",
+          "https://web-mercosur.vercel.app/img/dish-chivito.webp",
+          "https://web-mercosur.vercel.app/img/dish-pizza.webp"
+        ],
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "Gral. Flores 252",
+          "addressLocality": "Colonia del Sacramento",
+          "addressRegion": "Departamento de Colonia",
+          "postalCode": "70000",
+          "addressCountry": "UY"
+        },
+        "geo": {
+          "@type": "GeoCoordinates",
+          "latitude": "-34.4710",
+          "longitude": "-57.8446"
+        },
+        "openingHoursSpecification": [
+          {
+            "@type": "OpeningHoursSpecification",
+            "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"],
+            "opens": "11:00",
+            "closes": "23:30"
+          }
+        ],
+        "menu": "https://web-mercosur.vercel.app/lacarta",
+        "acceptsReservations": "True",
+        "paymentAccepted": "Efectivo, tarjetas de crédito y débito",
+        "currenciesAccepted": "UYU",
+        "hasMenu": "https://web-mercosur.vercel.app/lacarta"
+      }
+    </script>
   </head>
   <body>
     <div id="root"></div>
