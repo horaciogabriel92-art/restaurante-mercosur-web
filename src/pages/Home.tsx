@@ -212,17 +212,18 @@ export function Home() {
       <section id="mercosur-viaja" className="mx-auto grid max-w-6xl scroll-mt-24 items-center gap-12 px-5 py-24 md:grid-cols-2">
         <img
           src="/img/dish-parrilla.webp"
-          alt="Mercosur Viaja — para llevar"
+          alt="Mercosur Viaja — takeaway con 40% de descuento para llevar"
           className="aspect-[4/3] w-full rounded-2xl object-cover"
           loading="lazy"
         />
         <div>
-          <p className="text-xs font-bold uppercase tracking-[0.3em] text-gold-deep">Para llevar</p>
+          <p className="text-xs font-bold uppercase tracking-[0.3em] text-gold-deep">Takeaway · Para llevar</p>
           <h2 className="mt-3 font-display text-4xl font-semibold text-ink">Mercosur Viaja</h2>
           <p className="mt-6 leading-relaxed text-ink/75">
-            ¿Preferís disfrutar en tu propio hogar? Con Mercosur Viaja llevamos toda la carta a tu
-            mesa: la misma parrilla, los mismos sabores, donde estés. Consultanos las promociones
-            del día por WhatsApp.
+            ¿Preferís llevar Mercosur a tu casa? Con Mercosur Viaja, nuestro servicio de takeaway
+            (para llevar), tenés un <strong>40% de descuento en toda la carta</strong> (menos en
+            promociones). La misma parrilla, los mismos sabores, para disfrutar donde quieras.
+            Consultanos las promociones del día por WhatsApp.
           </p>
           <a
             href={WHATSAPP_URL}
@@ -291,7 +292,8 @@ export function Home() {
               Nuestra propuesta une lo mejor de la <strong>parrilla uruguaya</strong>, pizzas
               artesanales, pastas caseras y el clásico <strong>chivito</strong>. Contamos con
               opciones para celíacos, vegetarianos, veganos, menú infantil y un servicio de
-              take-away llamado Mercosur Viaja.
+              takeaway llamado <strong>Mercosur Viaja</strong>, con <strong>40% de descuento
+              en toda la carta</strong> (menos en promociones).
             </p>
             <p>
               Abrimos todos los días a partir de las 11:00. Reservas, pedidos y consultas por
